@@ -27,7 +27,6 @@ body {
   left: 50%;
   top: 50%;
   width: 900px;
-
   transform: translate(-50%, -50%);
   border-radius: 15px;
   overflow: hidden;
@@ -36,7 +35,7 @@ body {
 }
 
 .container .card {
-  padding: 45px 50px;
+  padding: 40px 50px;
   width: 33%;
   height: 400px;
   color: var(--transparent-white);
@@ -56,29 +55,35 @@ body {
   font-weight: 800;
   font-size: 35px;
   color: var(--very-light-gray);
+  text-transform: uppercase;
 }
 .container .card p {
   font-size: 15px;
 }
 
-.container .card button {
+.container .card a {
   padding: 17px 22px;
   background-color: var(--very-light-gray);
   border: none;
   border-radius: 40px;
   width: 140px;
-  margin-top: 70px;
+  margin-top: 90px;
   font-weight: bold;
+  display: block;
+  text-align: center;
 }
 
-.container .card:nth-child(1) button {
+.container .card:nth-child(1) a {
   color: var(--bright-orange);
+  text-decoration: none;
 }
-.container .card:nth-child(2) button {
+.container .card:nth-child(2) a {
   color: var(--dark-cyan);
+  text-decoration: none;
 }
-.container .card:nth-child(3) button {
+.container .card:nth-child(3) a {
   color: var(--very-dark-cyan);
+  text-decoration: none;
 }
 
 @media (max-width: 500px) {
