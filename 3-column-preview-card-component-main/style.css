@@ -19,6 +19,7 @@ body {
   display: relative;
   font-family: "Lexend Deca", serif;
   font-weight: 400;
+  background-color: var(--very-light-gray);
 }
 
 .container {
