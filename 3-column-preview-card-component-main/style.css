@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* (paragraphs) */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  display: relative;
+  font-family: "Lexend Deca", serif;
+  font-weight: 400;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 900px;
+
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.container .card {
+  padding: 45px 50px;
+  width: 33%;
+  height: 400px;
+  color: var(--transparent-white);
+}
+
+.container .card:nth-child(1) {
+  background-color: var(--bright-orange);
+}
+.container .card:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+.container .card:nth-child(3) {
+  background-color: var(--very-dark-cyan);
+}
+.container .card h2 {
+  font-family: "Big Shoulders Display", serif;
+  font-weight: 800;
+  font-size: 35px;
+  color: var(--very-light-gray);
+}
+.container .card p {
+  font-size: 15px;
+}
+
+.container .card button {
+  padding: 17px 22px;
+  background-color: var(--very-light-gray);
+  border: none;
+  border-radius: 40px;
+  width: 140px;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.container .card:nth-child(1) button {
+  color: var(--bright-orange);
+}
+.container .card:nth-child(2) button {
+  color: var(--dark-cyan);
+}
+.container .card:nth-child(3) button {
+  color: var(--very-dark-cyan);
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-top: 300px;
+  }
+  .container .card {
+    width: 70%;
+    padding: 55px 40px;
+    height: 340px;
+  }
+  .container .card button {
+    margin-top: 20px;
+  }
+}
